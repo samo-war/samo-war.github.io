@@ -1,5 +1,14 @@
+let currentLanguage = localStorage.getItem('ln');
+function defineLanguage(currentLanguage) {
+  if (!localStorage.getItem('ln')) {
+    return 'en';
+  } else {
+    return currentLanguage;
+  }
+}
+
 i18next.init({
-    lng: 'en',
+    lng: `${defineLanguage(currentLanguage)}`,
     debug: true,
     resources: {
       en: {
@@ -67,3 +76,4 @@ i18next.init({
   i18next.on('languageChanged', () => {
     updateContent();
   });
+  

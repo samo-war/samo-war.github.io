@@ -36,19 +36,33 @@
           <ul class="navbar-nav nav-flex-icons">
             <li class="nav-item">
               <a href="#" class="nav-link waves-effect">
-                <span class="clearfix d-sm-inline-block" id="lngChangeEn" onclick="i18next.changeLanguage('en')">EN</span>
+                <span class="clearfix d-sm-inline-block" id="lngChangeEn">EN</span>
               </a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link waves-effect">
-                <span class="clearfix d-sm-inline-block" id="lngChangeRu" onclick="i18next.changeLanguage('ru')">RU</span>
+                <span class="clearfix d-sm-inline-block" id="lngChangeRu">RU</span>
               </a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link waves-effect">
-                <span class="clearfix d-sm-inline-block" id="lngChangeBe" onclick="i18next.changeLanguage('be')">BE</span>
+                <span class="clearfix d-sm-inline-block" id="lngChangeBe">BE</span>
               </a>
             </li>
+            <script>
+              lngChangeEn.onclick = function() {
+                i18next.changeLanguage('en');
+                localStorage.setItem('ln', 'en');
+              }
+              lngChangeRu.onclick = function() {
+                i18next.changeLanguage('ru');
+                localStorage.setItem('ln', 'ru');
+              }
+              lngChangeBe.onclick = function() {
+                i18next.changeLanguage('be');
+                localStorage.setItem('ln', 'be');
+              }
+            </script>
           </ul>
         </div>
       </div>

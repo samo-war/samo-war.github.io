@@ -1,5 +1,14 @@
+let currentLanguage = localStorage.getItem('ln');
+function defineLanguage(currentLanguage) {
+  if (!localStorage.getItem('ln')) {
+    return 'en';
+  } else {
+    return currentLanguage;
+  }
+}
+
 i18next.init({
-    lng: 'ru',
+    lng: `${defineLanguage(currentLanguage)}`,
     debug: true,
     resources: {
       en: {
@@ -8,7 +17,7 @@ i18next.init({
           "header__home": "Home",
           "header__search": "Search",
           "bulgak": 'Jan Bułhak (October 6, 1876, Ostashino under Novogrudok - February 4, 1950, Giżycko (Lec), Warmia-Mazury, buried in Warsaw) - Russian and Polish photographer and the photographer," Polish photography father ", one of the pioneers of Polish art photography.',
-          "likhtarovich": "Georgy Leonidovich Likhtorovich (6 snezhnya 1947, Minsk) - Belarussian photo artist, writer. Member of the Belarussian Union of Designers (2000). Member of the Belarussian Union of Writers (2006).",
+          "likhtarovich": "Georgy Leonidovich Likhtarovich (6 snezhnya 1947, Minsk) - Belarussian photo artist, writer. Member of the Belarussian Union of Designers (2000). Member of the Belarussian Union of Writers (2006).",
           "kraszewski": "Lucian Kraszewski (July 24, 1820, township Pruzhany, Grodno Province, now Brest Region. - February 2, 1892, Ganyatychy Hrubieshovskiy Village, Poland) - Belarussian and Polish artist, photographer.",
           "anempodistov": "Mikhail Vladimirovich Anempodistov (March 16, 1964, Minsk - January 23, 2018, Minsk, Belarus) - Belarussian artist, designer, poet, cultural scientist, art historian.",
           "dashkevich": "Lev Urbanavich Dashkevich (February 12, 1882, Minsk - December 4, 1957 Minsk) - Belarussian photo artist, scientist, inventor, publicist, teacher.",
@@ -23,7 +32,7 @@ i18next.init({
           "header__home": "Домой",
           "header__search": "Поиск",
           "bulgak": 'Ян Бу́лгак (6 октября 1876, Осташино под Новогрудком — 4 февраля 1950, Гижицко (Лец), Варминско-Мазурское воеводство; похоронен в Варшаве) — белорусский и польский фотограф и фотохудожник, «отец польской фотографии», один из пионеров польской художественной фотографии.',
-          "likhtarovich": "Георгий Леонидович Лихторович (6 снежня 1947, Минск) - белорусский фотохудожник, литератор. Член Белорусского союза дизайнеров (2000). Член Белорусского союза писателей (2006 г.).",
+          "likhtarovich": "Георгий Леонидович Лихтарович (6 снежня 1947, Минск) - белорусский фотохудожник, литератор. Член Белорусского союза дизайнеров (2000). Член Белорусского союза писателей (2006 г.).",
           "kraszewski": "Люциан Крашевский (24 июля 1820, мест. Пружаны Гродненской губернии, ныне Брестской обл. - 2 февраля 1892, Ганятычы Грубешовский д., Польша) - белорусский и польский художник, фотограф.",
           "anempodistov": "Михаил Владимирович Анемподистов (16 марта 1964, Минск — 23 января 2018, Минск, Беларусь) — белорусский художник, дизайнер, поэт, культуролог, искусствовед.",
           "dashkevich": "Лев Урбанавич Дашкевич (12 февраля 1882, Минск - 4 декабря 1957 Минск) - белорусский фотохудожник, ученый, изобретатель, публицист, педагог.",

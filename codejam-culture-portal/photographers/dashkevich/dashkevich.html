@@ -24,6 +24,7 @@
 
    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900" rel="stylesheet">
   <link href="../css/mdb.min.css" rel="stylesheet">
+  <script src="https://unpkg.com/i18next/i18next.js"></script>
   
   
 </head>
@@ -31,7 +32,7 @@
     <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
         <div class="container">
             <a href="#" class="navbar-menu waves-effect ml-3 mr-3">
-            <strong class="blue-text">Photographers directory</strong>
+            <strong class="blue-text" id="header__photographers">Photographers directory</strong>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" 
             data-target="#navbarContent" aria-controls="navbarContent" 
@@ -41,28 +42,42 @@
             <div class="collapse navbar-collapse" id="navbarContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                <a href="#" class="nav-link waves-effect">Home</a>
+                <a href="../../index.html" class="nav-link waves-effect"id="header__home">Home</a>
                 </li>
                 <li class="nav-item">
-                <a href="search-page/" class="nav-link waves-effect">Search</a>
+                <a href="../../search-page/index.html" class="nav-link waves-effect" id="header__search">Search</a>
                 </li>
             </ul>
             <ul class="navbar-nav nav-flex-icons">
                 <li class="nav-item">
                 <a href="#" class="nav-link waves-effect">
-                    <span class="clearfix d-sm-inline-block">EN</span>
+                    <span class="clearfix d-sm-inline-block" id="lngChangeEn">EN</span>
                 </a>
                 </li>
                 <li class="nav-item">
                 <a href="#" class="nav-link waves-effect">
-                    <span class="clearfix d-sm-inline-block">RU</span>
+                    <span class="clearfix d-sm-inline-block" id="lngChangeRu">RU</span>
                 </a>
                 </li>
                 <li class="nav-item">
                 <a href="#" class="nav-link waves-effect">
-                    <span class="clearfix d-sm-inline-block">BE</span>
+                    <span class="clearfix d-sm-inline-block" id="lngChangeBe">BE</span>
                 </a>
                 </li>
+                <script>
+                    lngChangeEn.onclick = function() {
+                      i18next.changeLanguage('en');
+                      localStorage.setItem('ln', 'en');
+                    }
+                    lngChangeRu.onclick = function() {
+                      i18next.changeLanguage('ru');
+                      localStorage.setItem('ln', 'ru');
+                    }
+                    lngChangeBe.onclick = function() {
+                      i18next.changeLanguage('be');
+                      localStorage.setItem('ln', 'be');
+                    }
+                </script>
             </ul>
             </div>
         </div>
@@ -76,11 +91,11 @@
                 </div>
                 <div class="photographer-footnote">
                     <div class="photographer-name">
-                        <h1>Леў Дашкевіч</h1>
+                        <h1 id="dashkevich">Леў Дашкевіч</h1>
                     </div>
                     <div class="photographer-personal-info">
-                        <h3>Дата нараджэння: 12 лютага 1882г.</h3>
-                        <h3>Месца нараджэння:	
+                        <h3 id="dashkevich__birthday">Дата нараджэння: 12 лютага 1882г.</h3>
+                        <h3 id="dashkevich__birthPlace">Месца нараджэння:	
                             Мінск, Мінскі павет, Мінская губерня, Расійская імперыя</h3>
                         </ul>
                     </div>
@@ -89,7 +104,7 @@
             </div>
             
             <div class="timeline">
-                <h2 class='divider'>Біяграфія</h2>
+                <h2 class='divider' id='biography'>Біяграфія</h2>
                 <section class="cd-timeline js-cd-timeline">
                         <div class="cd-timeline__container">
                             <div class="cd-timeline__block js-cd-block">
@@ -99,9 +114,9 @@
                 
                                 <div class="cd-timeline__content js-cd-content">
                                     <h2>Нараджэнне</h2>
-                                    <p>Нарадзіўся ў горадзе Мінск, Беларусь</p>
+                                    <p>Нарадзіўся ў горадзе Мінску</p>
                                     
-                                    <span class="cd-timeline__date">6 снежня, 1947</span>
+                                    <span class="cd-timeline__date">12 лютага 1882</span>
                                 </div> 
                             </div>
                 
@@ -110,9 +125,11 @@
                                 </div> 
                 
                                 <div class="cd-timeline__content js-cd-content">
-                                    <h2>Праца асістэнтам</h2>
-                                    <p>Працаваў асістэнтам кінааператара на Мінскай студыі навукова-папулярных і хранікальна-дакументальных фільмаў.</p>
-                                    <span class="cd-timeline__date"> 1965—1966</span>
+                                    <h2>Вучоба</h2>
+                                    <p> У 1882—1896 гг. вучыўся ў Мінскай мужчынскай гімназіі і Віленскім інтэрнаце-канквіце.</p>
+                                    <p>З 1903 г. вучыўся на медыцынскім факультэце Варшаўскага ўніверсітэта. </p>
+                                    <p> 1906—1911 гг. вучыўся ў Францыі — на факультэце філалогіі (La faculté de lettres) Універсітэта Бургундыі (Дыжон).</p>
+                                    <span class="cd-timeline__date">1882—1911</span>
                                 </div> 
                             </div> 
                             <div class="cd-timeline__block js-cd-block">
@@ -121,9 +138,20 @@
                                 </div> 
                 
                                 <div class="cd-timeline__content js-cd-content">
-                                    <h2>Вайсковая служба</h2>
-                                    <p> Служыў у войску у п. Печы, в/ч 43064. Друкаваўся ў перыядычных выданнях.</p>
-                                    <span class="cd-timeline__date">1966-1968</span>
+                                    <h2>Ад'езд</h2>
+                                    <p>Жыў у Закаўказзі, працаваў выкладчыкам французскай мовы, фізікі, прыродазнаўства і іншых прадметаў у гімназіях Эрывані (Ерэван), Елізаветполя (цяпер Гянджа, Азербайджан), Тыфліса (Тбілісі)</p>
+                                    <span class="cd-timeline__date">1911—1920</span>
+                                </div> 
+                            </div> 
+                
+                            <div class="cd-timeline__block js-cd-block">
+                                <div class="cd-timeline__img cd-timeline__img--location js-cd-img">
+                                </div> 
+                
+                                <div class="cd-timeline__content js-cd-content">
+                                    <h2>Настаўніцкая дзейнасць</h2>
+                                    <p>З кастрычніка 1920 г. чытаў курсы лекцый па сусветнай літаратуры і фатаграфіі ў Менскім інстытуце народнай адукацыі, са снежня 1920 г. выкладаў французскую мову ў Беларускім політэхнічным інстытуце.</p>
+                                    <span class="cd-timeline__date">1920-1921</span>
                                 </div> 
                             </div> 
                 
@@ -133,19 +161,8 @@
                 
                                 <div class="cd-timeline__content js-cd-content">
                                     <h2>Праца фатографам</h2>
-                                    <p>Працаваў фатографам у Інстытуце мастацтвазнаўства, этнаграфіі і фальклору Акадэміі навук. Ілюстраваў першыя тамы «Збору помнікаў гісторыі і культуры Беларусі».</p>
-                                    <span class="cd-timeline__date">1969-1972</span>
-                                </div> 
-                            </div> 
-                
-                            <div class="cd-timeline__block js-cd-block">
-                                <div class="cd-timeline__img cd-timeline__img--location js-cd-img">
-                                </div> 
-                
-                                <div class="cd-timeline__content js-cd-content">
-                                    <h2>Праца фотакорам</h2>
-                                    <p>Працаваў фотакарэспандэнтам у дзяржаўных выдавецтвах. Шматлікія фотаальбомы, манаграфіі беларускіх мастакоў, энцыклапедычныя выданні, плакаты, камплекты паштовак, буклеты.</p>
-                                    <span class="cd-timeline__date">1974-1972</span>
+                                    <p>Удзельнічаў у Першай Усебеларускай выстаўцы краязнаўчых фатаграфій і замалёвак (Менск, красавік—май 1928), у выстаўцы ў Дрэздэне (Германія, 1930).</p>
+                                    <span class="cd-timeline__date">1928-1930</span>
                                 </div> 
                             </div> 
                 
@@ -154,14 +171,9 @@
                                 </div> 
                 
                                 <div class="cd-timeline__content js-cd-content">
-                                    <h2>Творчая праца</h2>
-                                    <p>У 2000 годзе як фотамастак выдаў фотаальбом «Добры дзень, Беларусь» — «Лепшая кніга года» на беларускім конкурсе «Мастацтва кнігі».</p>
-                                        <p> У 2001—2006 гадах прымаў удзел у фатаграфічных і мастацкіх выставах. Пленэры памяці Язэпа Драздовіча, Васіля Быкава, Уладзіміра Караткевіча. Удзельнічаў у перадачах беларускага Радыё Свабода: «Верш на Свабоду», «Прыватны дзённік», «Магія мовы».</p>
-
-                                            <p>У 2002 годзе выдаў кнігу паэзіі «Агульны сшытак». Прадмова Рыгора Барадуліна. У 2003 годзе абраны ў Раду беларускай інтэлігенцыі. З 2004 года член Рады Беларускага грамадскага аб'яднання «Фотамастацтва».</p>
-                                            
-                                            <p>2004 годзе вершамі і перакладамі ўдзельнічаў у выданні дыска беларускіх песень Галіны і Барыса Вайханскіх «Вяртанне». У 2005 годзе выдаў кнігу вершаў «Ліхтарыкі» з прадмовай Рыгора Барадуліна. У 2008 годзе ў выдавецтве «Эксмо» (Масква) выдаў дэтэктыўны раман «Газ».</p>
-                                    <span class="cd-timeline__date">1992 - </span>
+                                    <h2>Смерць</h2>
+                                    <p>Памёр 4 снежня 1957 ў Мінску</p>
+                                    <span class="cd-timeline__date">4 снежня 1957 </span>
                                 </div> 
                             </div> 
                         </div>
@@ -171,7 +183,7 @@
                 
             
             <div class="gallery">
-                <h2 class='divider'>Галерэя</h2>
+                <h2 class='divider' id='gallery'>Галерэя</h2>
                 <div class="carousel-wrapper">
                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="false">
                         <div class="carousel-inner">
@@ -207,14 +219,14 @@
             </div>
             
             <div class="map block-margin">
-                <h2 class='divider'>Мапа</h2>
+                <h2 class='divider' id="map">Мапа</h2>
                 <div id="mapid"></div>
             </div>        
         </section>
     </div>
     <footer class="page-footer text-center font-small wow fadeIn">
             <div class="pt-4">
-              <a href="#" class="btn btn-outline-white" role="button">Up</a>
+              <a href="#" class="btn btn-outline-white" role="button" id="up">Up</a>
             </div>
             <hr class="my-4">
             <div class="pb-4">
@@ -226,7 +238,7 @@
               </a>
             </div>
             <div class="footer-copyright py-3">
-              <p>&copy;RSS 2019 Group28 <i class="fa fa-graduation-cap ml-2"></i></p>
+              <p id="group">&copy;RSS 2019 Group28 <i class="fa fa-graduation-cap ml-2"></i></p>
             </div>
         </footer>
         <div id="myModal" class="modal">
@@ -244,7 +256,9 @@
     <script type="text/javascript" src="../js/mdb.min.js"></script>
 
     <script type="text/javascript" src="dashkevich.js"></script>
-    <script type="text/javascript" src="timeline.js"></script>
+    <script type="text/javascript" src="../js/timeline.js"></script>
+    <!-- Translation script -->
+    <script src="../js/translate.js"></script>
 
 </body>
 </html>
