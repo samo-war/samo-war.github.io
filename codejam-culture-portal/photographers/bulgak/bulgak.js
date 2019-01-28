@@ -1,6 +1,6 @@
 const modal = document.getElementById('myModal');
 const btn = document.getElementById('myBtn');
-const vid = document.getElementById('video');
+const vid = document.getElementById('ytvideo');
 
 btn.onclick = function () {
   modal.style.display = 'block';
