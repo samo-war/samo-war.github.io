@@ -37,7 +37,7 @@ p {
 .input {
   height: 25px;
   font-size: 18px;
-  margin: 10vh 0;
+  margin: 10vh 0 5vh;
 }
 
 .searcher-container {
