@@ -24,11 +24,11 @@
     justify-content: space-between;
 }
 .gallery{
-    width: 70%;
+    width: 50%;
 }
 
 .carousel img{
-    max-height: 400px;
+    height: 350px;
 }
 
 #timeline{
@@ -36,8 +36,7 @@
     height: 300px;
     padding: 0;
 }
-.video{
-}
+
 #myModal {
     display: none; 
     position: fixed; 
@@ -81,7 +80,6 @@
 .text-mask{
     background-color: rgba(0,0,0,0.5);
 }
-
 
 
 @-webkit-keyframes animatetop {
