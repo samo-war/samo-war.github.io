@@ -1,3 +1,4 @@
+import updateContent from './translate.js';
 const searcher = document.getElementById('search-input');
 const resultsSection = document.getElementById('results-section');
 let arr;
@@ -20,12 +21,13 @@ function loadResults(str) {
 
       const textContainer = document.createElement('div');
       const text = document.createElement('p');
-      text.innerText = arr[i].info;
+      text.id = `${arr[i].id}`;
       textContainer.appendChild(text);
 
       photographSection.appendChild(link);
       photographSection.appendChild(textContainer);
       resultsSection.appendChild(photographSection);
+      updateContent();
     }
   }
 }

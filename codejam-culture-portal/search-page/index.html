@@ -7,15 +7,17 @@
     <title>Searcher</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="../home-page/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../home-page/css/mdb.min.css" rel="stylesheet">
-    <link href="./css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../home-page/img/сamera-icon.png">
+    <script src="https://unpkg.com/i18next/i18next.js"></script>
   </head>
   <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
       <div class="container">
         <a href="#" class="navbar-menu waves-effect ml-3 mr-3">
-          <strong class="blue-text">Photographers directory</strong>
+          <strong class="blue-text" id="header__photographers">Photographers directory</strong>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse"
         data-target="#navbarContent" aria-controls="navbarContent"
@@ -25,26 +27,26 @@
         <div class="collapse navbar-collapse" id="navbarContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a href="#" class="nav-link waves-effect">Home</a>
+              <a href="../index.html" class="nav-link waves-effect"  id="header__home">Home</a>
             </li>
             <li class="nav-item">
-              <a href="search-page/" class="nav-link waves-effect">Search</a>
+              <a href="#" class="nav-link waves-effect" id="header__search">Search</a>
             </li>
           </ul>
           <ul class="navbar-nav nav-flex-icons">
             <li class="nav-item">
               <a href="#" class="nav-link waves-effect">
-                <span class="clearfix d-sm-inline-block">EN</span>
+                <span class="clearfix d-sm-inline-block" id="lngChangeEn" onclick="i18next.changeLanguage('en')">EN</span>
               </a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link waves-effect">
-                <span class="clearfix d-sm-inline-block">RU</span>
+                <span class="clearfix d-sm-inline-block" id="lngChangeRu" onclick="i18next.changeLanguage('ru')">RU</span>
               </a>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link waves-effect">
-                <span class="clearfix d-sm-inline-block">BE</span>
+                <span class="clearfix d-sm-inline-block" id="lngChangeBe" onclick="i18next.changeLanguage('be')">BE</span>
               </a>
             </li>
           </ul>
@@ -64,7 +66,7 @@
     </main>
     <footer class="page-footer text-center font-small wow fadeIn">
       <div class="pt-4">
-        <a href="#" class="btn btn-outline-white" role="button">Up</a>
+        <a href="#" class="btn btn-outline-white" role="button" id="up">Up</a>
       </div>
       <hr class="my-4">
       <div class="pb-4">
@@ -76,18 +78,11 @@
         </a>
       </div>
       <div class="footer-copyright py-3">
-        <p>&copy;RSS Group28 <i class="fa fa-graduation-cap ml-2"></i></p>
+        <p id="group">&copy;RSS Group28 <i class="fa fa-graduation-cap ml-2"></i></p>
       </div>
     </footer>
-            <!-- SCRIPTS -->
-    <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
-    <script src="./index.js"></script>
+    <script src="./index.js" type="module"></script>
+    <!-- Translation script -->
+    <script src="translate.js" type="module"></script>
   </body>
 </html>
