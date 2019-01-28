@@ -107,7 +107,7 @@ p {
 .grid-item-8 {
   min-height: 40vh;
 
-  background-image: url('https://images.pexels.com/photos/1078851/pexels-photo-1078851.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-image: url('../assets/crypto-kittensseller.jpg');
   background-position: center center;
   grid-area: h;
 
@@ -115,7 +115,7 @@ p {
 
 .grid-item-9 {
   min-height: 40vh;
-  background-image: url('https://images.pexels.com/photos/206551/pexels-photo-206551.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-image: url('../assets/yuliyahlukhatarenka.jpg');
   background-position: center top;
   grid-area: k;
 
@@ -124,7 +124,7 @@ p {
 .grid-item-10 {
   min-height: 40vh;
 
-  background-image: url('https://images.pexels.com/photos/1002406/pexels-photo-1002406.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-image: url('../assets/pinkrefugee.jpg');
   background-position: center top;
   grid-area: l;
 
@@ -235,7 +235,7 @@ p {
   }
 } */
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
   .grid-wrapper {
     grid-template-areas: "a a b b b b c c"
                          "d d d d e e e e"
