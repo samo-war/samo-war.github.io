@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Photographers</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="home-page/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="home-page/css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="home-page/css/style.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="home-page/img/сamera-icon.png">
+  <script src="https://unpkg.com/i18next/i18next.js"></script>
+  <style>
+    html,
+    body,
+    header,
+    .carousel {
+      height: 60vh;
+    }
+
+    @media (max-width: 500px) {
+      html,
+      body,
+      header,
+      .carousel {
+        height: 100vh;
+        background-position: center center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+    <div class="container">
+      <a href="#" class="navbar-menu waves-effect ml-3 mr-3">
+        <strong class="blue-text" id="header__photographers">Photographers directory</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" 
+      data-target="#navbarContent" aria-controls="navbarContent" 
+      aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a href="#" class="nav-link waves-effect" id="header__home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="search-page/index.html" class="nav-link waves-effect" id="header__search">Search</a>
+          </li>
+        </ul>
+        <ul class="navbar-nav nav-flex-icons">
+          <li class="nav-item">
+            <a href="#" class="nav-link waves-effect">
+              <span class="clearfix d-sm-inline-block" onclick="i18next.changeLanguage('en')">EN</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link waves-effect">
+              <span class="clearfix d-sm-inline-block" onclick="i18next.changeLanguage('ru')">RU</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link waves-effect">
+              <span class="clearfix d-sm-inline-block" onclick="i18next.changeLanguage('be')">BE</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <div id="carousel-ex" class="carousel slide carousel-fade pt-4" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li class="active" data-target="#carousel-ex" data-slide-to="0"></li>
+      <li data-target="#carousel-ex" data-slide-to="1"></li>
+      <li data-target="#carousel-ex" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <div class="view" style="background-image: url('https://images.pexels.com/photos/46794/camera-photos-photograph-paper-prints-46794.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+        background-repeat: no-repeat; background-size: cover;">
+          <div class="mask rgba-black-strong d-flex 
+          justify-content-center align-items-center">
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong class="carousel__photographers-js">Photographers directory</strong>
+              </h1>
+              <a href="search-page/index.html" class="btn btn-outline-white btn-lg carousel__search-js">Search photographers</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="view" style="background-image: url('https://images.pexels.com/photos/417059/pexels-photo-417059.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+        background-repeat: no-repeat; background-size: cover">
+          <div class="mask rgba-black-strong d-flex 
+          justify-content-center align-items-center">
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong class="carousel__photographers-js">Photographers directory</strong>
+              </h1>
+              <a href="search-page/index.html" class="btn btn-outline-white btn-lg carousel__search-js">Search photographers</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="view" style="background-image: url('https://images.pexels.com/photos/226243/pexels-photo-226243.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+        background-repeat: no-repeat; background-size: cover">
+          <div class="mask rgba-black-strong d-flex 
+          justify-content-center align-items-center">
+            <div class="text-center white-text mx-5 wow fadeIn">
+              <h1 class="mb-4">
+                <strong class="carousel__photographers-js">Photographers directory</strong>
+              </h1>
+              <a href="search-page/index.html" class="btn btn-outline-white btn-lg carousel__search-js">Search photographers</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#carousel-ex" class="carousel-control-prev role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </a>
+    <a href="#carousel-ex" class="carousel-control-next role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <main class="wrapper">
+    <div class="grid-wrapper">
+      <div class="grid-item grid-item-1 wow fadeIn">
+      </div>
+      <div class="grid-item grid-item-2 wow fadeIn d-flex justify-content-center 
+      align-items-flex-end">
+        <a href="#" class="btn btn-warning btn-rounded waves-effect btn-lg mb-5" id="thisDayPhotographer">This day's photographer</a>
+      </div>
+      <div class="grid-item grid-item-3 wow fadeIn">
+      </div>
+      <div class="grid-item grid-item-4 wow fadeIn p-4 justify-content-center 
+      align-items-center">
+        <h2>
+          <span><strong id="portal-info">This is unique database of profiles of Belarussian photographers 
+          with the ability to search by their name or place of birth. 
+          All profiles contain biographical data, photographs, video 
+          materials and a map on which the most significant places for 
+          the photographer are marked.
+          </strong></span> 
+        </h2>
+      </div>
+      <div class="grid-item grid-item-5 wow fadeIn">
+      </div>
+      <div class="grid-item grid-item-6 wow fadeIn justify-content-center 
+      align-items-center white-text">
+        <h2 id="students-RSS">Portal was created by students of The Rolling Scopes School</h2>
+      </div>
+      <div class="grid-item grid-item-7 wow fadeIn justify-content-center 
+      align-items-flex-end">
+        <ul class="list">
+          <li>
+            <a href="https://github.com/samo-war" class="btn btn-info btn-rounded btn-md">
+              <i class="fa fa-github fa-2x mr-4"></i>samo-war
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="grid-item grid-item-8 wow fadeIn justify-content-center 
+      align-items-flex-end">
+        <ul class="list">
+          <li>
+            <a href="https://github.com/crypto-kittensseller" class="btn btn-info btn-rounded btn-md">
+              <i class="fa fa-github fa-2x mr-4"></i>crypto-kittensseller
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="grid-item grid-item-9 wow fadeIn justify-content-center 
+      align-items-flex-end">
+        <ul class="list">
+          <li>
+            <a href="https://github.com/yuliyahlukhatarenka" class="btn btn-info btn-rounded btn-md">
+              <i class="fa fa-github fa-2x mr-4"></i>yuliyahlukhatarenka
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="grid-item grid-item-10 wow fadeIn justify-content-center 
+      align-items-flex-end">
+        <ul class="list">
+          <li>
+            <a href="https://github.com/pinkrefugee" class="btn btn-info btn-rounded btn-md">
+              <i class="fa fa-github fa-2x mr-4"></i>pinkrefugee
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer class="page-footer text-center font-small wow fadeIn">
+    <div class="pt-4">
+      <a href="#" class="btn btn-outline-white" role="button" id="up">Up</a>
+    </div>
+    <hr class="my-4">
+    <div class="pb-4">
+      <a href="https://github.com/rolling-scopes-school">
+        <i class="fa fa-github fa-2x mr-4"></i>
+      </a>
+      <a href="https://www.youtube.com/channel/UCUgmHbk1rTFaf4GGKQ1OXfQ">
+        <i class="fa fa-youtube fa-2x"></i>
+      </a>
+    </div>
+    <div class="footer-copyright py-3">
+      <p id="group">&copy;RSS 2019 Group28 <i class="fa fa-graduation-cap ml-2"></i></p>
+    </div>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="home-page/js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="home-page/js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="home-page/js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="home-page/js/mdb.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+  <!-- Translation script -->
+  <script src="./home-page/js/translate.js"></script>
+</body>
+
+</html>
