@@ -37,7 +37,7 @@ p {
 .input {
   height: 25px;
   font-size: 18px;
-  margin: 10vh 0 5vh;
+  margin: 10vh 0 2vh;
 }
 
 .searcher-container {
@@ -47,7 +47,7 @@ p {
 
 .results-container {
   max-width: 1200px;
-  height: 800px;
+  height: 100%;
 }
 
 .result-section {
@@ -73,7 +73,7 @@ p {
 @media (max-width: 600px) {
   .results-container {
     max-width: 580px;
-    height: 1800px;
+    height: 100%;
   }
 
   .photograph-section {
