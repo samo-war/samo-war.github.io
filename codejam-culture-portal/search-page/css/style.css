@@ -35,39 +35,53 @@ p {
 } */
 
 .input {
-    height: 25px;
-    font-size: 18px;
-    margin: 5vh 0;
-
+  height: 25px;
+  font-size: 18px;
+  margin: 10vh 0;
 }
 
 .searcher-container {
-    position: relative;
-    margin: 0 auto;
+  position: relative;
+  margin: 0 auto;
 }
 
 .results-container {
-    max-width: 1200px;
-    height: 800px;
+  max-width: 1200px;
+  height: 800px;
 }
 
 .result-section {
-    display: grid;
-    grid-template-rows: repeat(6, 1fr);
-    background: rgba(255, 255, 255, 0.6);
-    margin: 50px 20px 0;
-
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  background: rgba(255, 255, 255, 0.6);
+  margin: 50px 20px 0;
 }
 
 .photograph-section {
-    display: grid;
-    grid-template-columns: 15% 85%;
-    justify-items: center;
-    align-items: center;
-    border-bottom-style: solid;
-    border-color: rgba(128, 128, 128, 0.6);
+  display: grid;
+  grid-template-columns: 15% 85%;
+  justify-items: center;
+  align-items: center;
+  border-bottom-style: solid;
+  border-color: rgba(128, 128, 128, 0.6);
 }
 
 .page-footer {
   background-color: #929fba;
+}
+
+@media (max-width: 600px) {
+  .results-container {
+    max-width: 580px;
+    height: 1800px;
+  }
+
+  .photograph-section {
+    display: block;
+    overflow: hidden;
+    text-align: center;
+    padding-top: 5px;
+    border-bottom-style: solid;
+    border-color: rgba(128, 128, 128, 0.6);
+  }
 }
