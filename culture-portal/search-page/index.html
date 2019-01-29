@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Searcher</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../home-page/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../home-page/css/mdb.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../home-page/img/сamera-icon.png">
+    <script src="https://unpkg.com/i18next/i18next.js"></script>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light white scrolling-navbar">
+      <div class="container">
+        <a href="../index.html" class="navbar-menu waves-effect ml-3 mr-3">
+          <strong class="blue-text" id="header__photographers">Photographers directory</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarContent" aria-controls="navbarContent"
+        aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link waves-effect"  id="header__home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link waves-effect" id="header__search">Search</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav nav-flex-icons">
+            <li class="nav-item">
+              <a href="#" class="nav-link waves-effect">
+                <span class="clearfix d-sm-inline-block" id="lngChangeEn">EN</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link waves-effect">
+                <span class="clearfix d-sm-inline-block" id="lngChangeRu">RU</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link waves-effect">
+                <span class="clearfix d-sm-inline-block" id="lngChangeBe">BE</span>
+              </a>
+            </li>
+            <script>
+              lngChangeEn.onclick = function() {
+                i18next.changeLanguage('en');
+                localStorage.setItem('ln', 'en');
+              }
+              lngChangeRu.onclick = function() {
+                i18next.changeLanguage('ru');
+                localStorage.setItem('ln', 'ru');
+              }
+              lngChangeBe.onclick = function() {
+                i18next.changeLanguage('be');
+                localStorage.setItem('ln', 'be');
+              }
+            </script>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main class="wrapper">
+      <div class="main-container">
+        <div class="searcher-container">
+            <input type="text" id="search-input" class="input">
+        </div>
+        <div class="results-container">
+            <div id="results-section" class="result-section">
+            </div>
+        </div>
+      </div>
+    </main>
+    <footer class="page-footer text-center font-small wow fadeIn">
+      <div class="pt-4">
+        <a href="#" class="btn btn-outline-white" role="button" id="up">Up</a>
+      </div>
+      <hr class="my-4">
+      <div class="pb-4">
+        <a href="https://github.com/rolling-scopes-school">
+          <i class="fa fa-github fa-2x mr-4"></i>
+        </a>
+        <a href="https://www.youtube.com/channel/UCUgmHbk1rTFaf4GGKQ1OXfQ">
+          <i class="fa fa-youtube fa-2x"></i>
+        </a>
+      </div>
+      <div class="footer-copyright py-3">
+        <p id="group">&copy;RSS Group28 <i class="fa fa-graduation-cap ml-2"></i></p>
+      </div>
+    </footer>
+    <script src="./index.js" type="module"></script>
+    <!-- Translation script -->
+    <script src="translate.js" type="module"></script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="../home-page/js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="../home-page/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="../home-page/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="../home-page/js/mdb.min.js"></script>
+  </body>
+</html>

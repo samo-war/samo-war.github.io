@@ -1,0 +1,53 @@
+{
+
+"photographers": [
+    {
+      "id": "bulgak",
+      "name": "ян булгак jan bulhak",
+      "place": "новогрудок осташино асташын навагрудак ostaszyn ",
+      "pict": "JanBulhak.png",
+      "link": "../photographers/bulgak/bulgak.html",
+      "info": "Jan Bułhak (October 6, 1876, Ostashino under Novogrudok - February 4, 1950, Giżycko (Lec), Warmia-Mazury, buried in Warsaw) - Russian and Polish photographer and the photographer,\" Polish photography father \", one of the pioneers of Polish art photography."
+    },
+    {
+      "id": "likhtarovich",
+      "name": "георгий леонидович лихторович георгій леанардавіч ліхтаровіч george leonardovich likhtarovich",
+      "place": "минск мінск minsk",
+      "pict": "GeorgLihtarovich.png",
+      "link": "../photographers/likhtarovich/likhtarovich.html",
+      "info": "Georgy Leonidovich Likhtorovich (6 snezhnya 1947, Minsk) - Belarusian photo artist, writer. Member of the Belarusian Union of Designers (2000). Member of the Belarusian Union of Writers (2006)."
+    },
+    {   
+      "id": "kraszewski",
+      "name": "люцыян крашэўскі lucian kraszewski люциан крашевский",
+      "place": "пружаны pruzhany",
+      "pict": "Lucian.png",
+      "link": "../photographers/krasheuski/krasheuski.html",
+      "info": "Lucian Kraszewski (July 24, 1820, township Pruzhany, Grodno Province, now Brest Region. - February 2, 1892, Ganyatychy Hrubieshovskiy Village, Poland) - Belarusian and Polish artist, photographer."
+    },
+    {
+      "id": "anempodistov",
+      "name": "анемподистов михаил владимирович міхаіл уладзіміравіч анемпадыстаў anempodistov mikhail vladimirovich",
+      "place": "минск мінск minsk",
+      "pict": "Anempodistov.png",
+      "link": "../photographers/amnepadzistau/amnepadzistau.html",
+      "info": "Mikhail Vladimirovich Anempodistov (March 16, 1964, Minsk - January 23, 2018, Minsk, Belarus) - Belarusian artist, designer, poet, cultural scientist, art historian."
+    },
+    {
+      "id": "dashkevich",
+      "name": "лев урбанавич дашкевич леў урбанавіч дашкевіч ley urbanavich dashkevich",
+      "place": "минск мінск minsk",
+      "pict": "Dashevich.png",
+      "link": "../photographers/dashkevich/dashkevich.html",
+      "info": "Lev Urbanavich Dashkevich (February 12, 1882, Minsk - December 4, 1957 Minsk) - Belarusian photo artist, scientist, inventor, publicist, teacher."
+    },
+    {
+      "id": "barazna",
+      "name": "михаил григорьевич баразна міхаіл рыгоравіч баразна michael georgevich barazna",
+      "place": "pакушава rakushava",
+      "pict": "Borozno.png",
+      "link": "../photographers/barazna/barazna.html",
+      "info": "Mikhail Grigorievich Barazna (November 20, 1962, D. Rakushava, Kruglyansky District, Mogilev Region) - Belarussian art historian, art critic, photo artist."
+  }
+]
+}

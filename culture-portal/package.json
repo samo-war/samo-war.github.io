@@ -1,0 +1,19 @@
+{
+  "name": "codejam-culture-portal",
+  "version": "1.0.0",
+  "description": "CodeJam-Culture-Portal",
+  "main": "./home-page/index.js",
+  "dependencies": {
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/samo-war/CodeJam-Culture-Portal"
+  },
+  "author": "group 28",
+  "license": "ISC"
+}
